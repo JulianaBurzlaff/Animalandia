@@ -1,0 +1,479 @@
+body {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fase {
+  width: 720px;
+  height: 512px;
+  border: 20px solid white;
+  border-radius: 20px;
+  position: relative;
+}
+
+#fase1 {
+  background: url("../images/prehistory/fundo.jpg") no-repeat center
+    var(--white);
+  background-size: cover;
+}
+
+#fase2 {
+  background: url("../images/forest/fundo.jpg") no-repeat center var(--white);
+  background-size: cover;
+}
+
+#fase3 {
+  background: url("../images/ocean/fundo.jpg") no-repeat center var(--white);
+  background-size: cover;
+}
+
+#fase4 {
+  background: url("../images/sky/fundo.jpg") no-repeat center var(--white);
+  background-size: cover;
+}
+
+#fase5 {
+  background: url("../images/garden/fundo.jpg") no-repeat center var(--white);
+  background-size: cover;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 2.5%;
+  transition: transform 0.1s ease;
+  transform: scale(1);
+}
+
+.error {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 20.5%;
+  right: 12.5%;
+}
+
+.score {
+  width: 40px;
+  height: 50px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+
+  color: black;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+}
+
+.close_fase {
+  /* width: 60px;
+  height: 40px; */
+  background-color: #cb3f49;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 15px;
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+  transition: transform 0.1s ease;
+  transform: scale(1);
+}
+
+.close_fase:hover {
+  background-color: #f04954;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+#close_game_modal,
+.modal_fase p,
+.modal_help p,
+#level_complete,
+#modal_collection,
+#modal_quit_game,
+#modal_rank {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: var(--gray);
+}
+
+#close_game_modal button,
+.modal_fase button,
+#fase_complete button,
+#level_complete button,
+#modal_quit_game button {
+  text-decoration: none;
+  color: var(--gray);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#close_game_modal button {
+  width: 110px;
+  height: 40px;
+  margin-left: 15px;
+  background-color: var(--green);
+  box-shadow: 3px 7px 10px #c4c4c4;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.1s ease;
+  transform: scale(1);
+}
+
+#close_game_modal button:hover,
+.modal_fase button:hover,
+#fase_complete button:hover,
+#level_complete button:hover,
+#modal_quit_game button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.modal_fase {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.modal_fase button,
+#level_complete button,
+#modal_quit_game button {
+  width: 110px;
+  height: 40px;
+  background-color: var(--green);
+  box-shadow: 3px 7px 10px #c4c4c4;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.1s ease;
+  transform: scale(1);
+}
+
+.fase_complete_bg {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0.35;
+  border-radius: 10px;
+}
+
+#fase_complete button {
+  width: 170px;
+  height: 40px;
+  background-color: var(--green);
+  box-shadow: 3px 7px 10px #c4c4c4;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.1s ease;
+  transform: scale(1);
+}
+
+#fase_complete p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+
+  color: var(--gray);
+}
+
+.position1 {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.position2 {
+  position: absolute;
+  top: 33%;
+  right: 20%;
+}
+
+.position3 {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+}
+
+.position4 {
+  position: absolute;
+  top: 18%;
+  left: 40%;
+}
+
+.position5 {
+  position: absolute;
+  bottom: 20%;
+  left: 25%;
+}
+
+.position1:hover,
+.position2:hover,
+.position3:hover,
+.position4:hover,
+.position5:hover {
+  cursor: pointer;
+}
+
+.box-hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-device-width: 925px) {
+  .fase {
+    width: 590px;
+    height: 420px;
+    border: 20px solid white;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .animal,
+  .object
+  {
+    height: 75px;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 2.5%;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-device-width: 812px) {
+  .fase { 
+    width: 340px;
+    height: 240px;
+    border: 20px solid white;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .animal,
+  .object
+  {
+    height: 50px;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 2.5%;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .box {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 2.5%;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .close_fase {
+    background-color: #cb3f49;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: var(--white);
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 15px;
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .score {
+    width: 20px;
+    height: 30px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+  
+    color: black;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+  
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+  }
+}
+
+@media only screen and (max-device-width: 760px) {
+  .fase { 
+    width: 590px;
+    height: 423px;
+    border: 20px solid white;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .animal,
+  .object
+  {
+    height: 75px;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 2.5%;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-device-width: 736px)
+{
+  .fase { 
+    margin-top: 30px;
+    width: 340px;
+    height: 300px;
+    border: 20px solid white;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .animal,
+  .object
+  {
+    height: 45px;
+  }
+
+  .box {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    right: 2.5%;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+}
+
+
+@media only screen and (max-device-width: 667px) {
+  .fase { 
+    width: 340px;
+    height: 240px;
+    border: 20px solid white;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .animal,
+  .object
+  {
+    height: 55px;
+  }
+
+  .box {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    right: 2.5%;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .close_fase {
+    background-color: #cb3f49;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: var(--white);
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 15px;
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .score {
+    width: 20px;
+    height: 30px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+  
+    color: black;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+  
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+  }
+}

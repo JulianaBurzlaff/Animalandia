@@ -1,0 +1,828 @@
+
+@media only screen and (max-device-width: 1200px){
+  .wrapper {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    width: 100%;
+    height: 100%;
+  }
+
+  #map {
+    width: 720px;
+    height: 512px;
+    background: url("../images/map.png") no-repeat center;
+    background-size: contain;
+    border: 20px solid var(--white);
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+  }
+
+  #fase1_button {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+  #fase2_button {
+    position: absolute;
+    top: 82%;
+    left: 13%;
+  }
+  #fase3_button {
+    position: absolute;
+    top: 71%;
+    left: 90.5%;
+  }
+  #fase4_button {
+    position: absolute;
+    top: 5%;
+    left: 42%;
+  }
+  #fase5_button {
+    position: absolute;
+    top: 68%;
+    left: 57%;
+  }
+
+  .fase_button {
+    width: 50px;
+    height: 40px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .fase_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .icons:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #back {
+    position: absolute;
+    top: 3%;
+    left: 1.5%;
+  }
+
+  #help {
+    position: absolute;
+    top: 3%;
+    right: 2%;
+  }
+
+  #soundon {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+  }
+
+  #soundoff {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+  }
+
+  #rank {
+    position: absolute;
+    top: 27%;
+    right: 2%;
+  }
+
+  #collection {
+    position: absolute;
+    top: 39%;
+    right: 2%;
+  }
+
+  .collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center 
+  }
+
+  .stamp{
+    margin: 4px;
+    padding: 10px;
+    display: inline-block;
+    border: 13px solid transparent;
+    border-image: url(../images/stamp.png) 20 20 20 20 round round;
+    width: 50px;
+    height: 50px;
+  }
+
+  .my_stickers{
+    width: 73px;
+    margin-left: -10px;
+  }
+
+  .forest-album {
+    height: 60px;
+    width: 53px;
+    margin-left: 2px;
+  }
+
+  .garden-album {
+    height: 60px;
+    width: 60px;
+    margin-left: .5px;
+  }
+
+  .prehistory-album {
+    height: 60px;
+    width: 67px;
+  }
+
+  .ocean-album {
+    height: 60px;
+    width: 55px;
+    margin-left: 1px;
+  }
+}
+
+@media only screen and (min-device-width: 1200px){
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    width: 100%;
+    height: 100%;
+  }
+
+  #map {
+    width: 720px;
+    height: 512px;
+    background: url("../images/map.png") no-repeat center;
+    background-size: contain;
+    border: 20px solid var(--white);
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+  }
+
+  #fase1_button {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+  #fase2_button {
+    position: absolute;
+    top: 82%;
+    left: 13%;
+  }
+  #fase3_button {
+    position: absolute;
+    top: 71%;
+    left: 90.5%;
+  }
+  #fase4_button {
+    position: absolute;
+    top: 5%;
+    left: 42%;
+  }
+  #fase5_button {
+    position: absolute;
+    top: 68%;
+    left: 57%;
+  }
+
+  .fase_button {
+    width: 50px;
+    height: 40px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .fase_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .icons:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #back {
+    position: absolute;
+    top: 3%;
+    left: 7%;
+  }
+
+  #help {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+  }
+
+  #soundon {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+  }
+
+  #soundoff {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+  }
+
+  #rank {
+    position: absolute;
+    top: 27%;
+    right: 10%;
+  }
+
+  #collection {
+    position: absolute;
+    top: 39%;
+    right: 10%;
+  }
+
+  .collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center 
+  }
+
+  .stamp{
+    margin: 4px;
+    padding: 10px;
+    display: inline-block;
+    border: 13px solid transparent;
+    border-image: url(../images/stamp.png) 20 20 20 20 round round;
+    width: 50px;
+    height: 50px;
+  }
+
+  .my_stickers{
+    width: 73px;
+    margin-left: -10px;
+  }
+
+  .forest-album {
+    height: 60px;
+    width: 53px;
+    margin-left: 2px;
+  }
+
+  .garden-album {
+    height: 60px;
+    width: 60px;
+    margin-left: .5px;
+  }
+
+  .prehistory-album {
+    height: 60px;
+    width: 67px;
+  }
+
+  .ocean-album {
+    height: 60px;
+    width: 55px;
+    margin-left: 1px;
+  }
+}
+
+@media only screen and (min-device-width: 1600px){
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    width: 100%;
+    height: 100%;
+  }
+
+  #map {
+    width: 720px;
+    height: 512px;
+    background: url("../images/map.png") no-repeat center;
+    background-size: contain;
+    border: 20px solid var(--white);
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+  }
+
+  #fase1_button {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+  #fase2_button {
+    position: absolute;
+    top: 82%;
+    left: 13%;
+  }
+  #fase3_button {
+    position: absolute;
+    top: 71%;
+    left: 90.5%;
+  }
+  #fase4_button {
+    position: absolute;
+    top: 5%;
+    left: 42%;
+  }
+  #fase5_button {
+    position: absolute;
+    top: 68%;
+    left: 57%;
+  }
+
+  .fase_button {
+    width: 50px;
+    height: 40px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .fase_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+  }
+
+  .icons:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #back {
+    position: absolute;
+    top: 3%;
+    left: 14%;
+  }
+
+  #help {
+    position: absolute;
+    top: 3%;
+    right: 18%;
+  }
+
+  #soundon {
+    position: absolute;
+    top: 15%;
+    right: 18%;
+  }
+
+  #soundoff {
+    position: absolute;
+    top: 15%;
+    right: 18%;
+  }
+
+  #rank {
+    position: absolute;
+    top: 27%;
+    right: 18%;
+  }
+
+  #collection {
+    position: absolute;
+    top: 39%;
+    right: 18%;
+  }
+
+  .collection {
+    display: flex;
+    flex-direction: row;
+     justify-content: center 
+  }
+
+  .stamp{
+    margin: 4px;
+    padding: 10px;
+    display: inline-block;
+    border: 13px solid transparent;
+    border-image: url(../images/stamp.png) 20 20 20 20 round round;
+    width: 50px;
+    height: 50px;
+  }
+
+  .my_stickers{
+    width: 73px;
+    margin-left: -10px;
+  }
+
+  .forest-album {
+    height: 60px;
+    width: 53px;
+    margin-left: 2px;
+  }
+
+  .garden-album {
+    height: 60px;
+    width: 60px;
+    margin-left: .5px;
+  }
+
+  .prehistory-album {
+    height: 60px;
+    width: 67px;
+  }
+
+  .ocean-album {
+    height: 60px;
+    width: 55px;
+    margin-left: 1px;
+  }
+}
+
+@media only screen and (max-device-width: 925px) {
+  #map {
+    width: 590px;
+    height: 420px;
+    background: url("../images/map.png") no-repeat center;
+    background-size: contain;
+    border: 20px solid var(--white);
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+  }
+
+  #help {
+    position: absolute;
+    top: 3%;
+    left: 26%;
+  }
+  
+  #soundon {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+  }
+  
+  #soundoff {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+  }
+  
+  #rank {
+    position: absolute;
+    top: 3%;
+    left: 48%;
+  }
+  
+  #collection {
+    position: absolute;
+    top: 3%;
+    left: 59%;
+  }
+}
+
+@media only screen and (max-device-width: 760px) {
+  #map {
+    width: 590px;
+    height: 423px;
+    background: url("../images/map.png") no-repeat center;
+    background-size: contain;
+    border: 20px solid var(--white);
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+  }
+
+  #help {
+    position: absolute;
+    top: 3%;
+    left: 26%;  
+  }
+  
+  #soundon {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+  }
+  
+  #soundoff {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+  }
+  
+  #rank {
+    position: absolute;
+    top: 3%;
+    left: 48%;
+  }
+  
+  #collection {
+    position: absolute;
+    top: 3%;
+    left: 59%;
+  }
+}
+
+@media only screen and (max-device-width: 736px) {
+  #map {
+    width: 340px;
+    height: 300px;
+    background: url("../images/map.png") no-repeat center;
+    background-size: contain;
+    border: 20px solid var(--white);
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+  }
+
+  #help {
+    position: absolute;
+    top: 3%;
+    left: 26%;  
+  }
+  
+  #soundon {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+  }
+  
+  #soundoff {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+  }
+  
+  #rank {
+    position: absolute;
+    top: 3%;
+    left: 48%;
+  }
+  
+  #collection {
+    position: absolute;
+    top: 3%;
+    left: 59%;
+  }
+
+  .fase_button {
+    width: 50px;
+    height: 40px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+    height: 20px;
+    width: 20px;
+  }
+
+  .fase_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #back {
+    position: absolute;
+    top: 3%;
+    left: 1.5%;
+    height: 30px;
+    width: 30px;
+  }
+
+  #help {
+    position: absolute;
+    top: 3%;
+    left: 26%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #soundon {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #soundoff {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #rank {
+    position: absolute;
+    top: 3%;
+    left: 48%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #collection {
+    position: absolute;
+    top: 3%;
+    left: 59%;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media only screen and (max-device-width: 812px) {
+  #map {
+    width: 340px;
+    height: 240px;
+    background: url("../images/map.png") no-repeat center;
+    background-size: contain;
+    border: 20px solid var(--white);
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .fase_button {
+    width: 50px;
+    height: 40px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+    height: 20px;
+    width: 20px;
+  }
+
+  .fase_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #back {
+    position: absolute;
+    top: 3%;
+    left: 1.5%;
+    height: 30px;
+    width: 30px;
+  }
+
+  #help {
+    position: absolute;
+    top: 3%;
+    left: 26%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #soundon {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #soundoff {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #rank {
+    position: absolute;
+    top: 3%;
+    left: 48%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #collection {
+    position: absolute;
+    top: 3%;
+    left: 59%;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media only screen and (max-device-width: 667px) {
+  #map {
+    width: 340px;
+    height: 240px;
+    background: url("../images/map.png") no-repeat center;
+    background-size: contain;
+    border: 20px solid var(--white);
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .fase_button {
+    width: 50px;
+    height: 40px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+    height: 20px;
+    width: 20px;
+  }
+
+  .fase_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #back {
+    position: absolute;
+    top: 3%;
+    left: 1.5%;
+    height: 30px;
+    width: 30px;
+  }
+
+  #help {
+    position: absolute;
+    top: 3%;
+    left: 26%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #soundon {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #soundoff {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #rank {
+    position: absolute;
+    top: 3%;
+    left: 48%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #collection {
+    position: absolute;
+    top: 3%;
+    left: 59%;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.cloud{
+  position: fixed;
+  width: 250px;
+  opacity: 25%
+}
+
+#cloud_1{
+  top: 140px;
+  left: 40px;
+}
+
+#cloud_2{
+  top: 238px;
+  left: 458px;
+}
+
+#cloud_3{
+  top: -19px;
+  left: 140px;
+}
+
+#cloud_4{
+  top: 50px;
+  right: 40px;
+}
+
+#cloud_5{
+  top: 135px;
+  right: -40px;
+}

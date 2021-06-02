@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animalândia</title>
+    <link rel="stylesheet" href="style/theme.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/map.css" />
+    <link rel="stylesheet" href="style/fases.css" />
+    <link rel="stylesheet" href="style/ranking.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" type="image/png" href="images/birdicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img class="cloud"  id="cloud_5" src="images/cloud.png"></div>
+    <img class="cloud"  id="cloud_4" src="images/cloud.png"></div>
+    <img class="cloud"  id="cloud_3" src="images/cloud.png"></div>
+    <img class="cloud"  id="cloud_2" src="images/cloud.png"></div>
+    <img class="cloud"  id="cloud_1" src="images/cloud.png"></div>
+
+    <div id="initial-page">
+      <h1>Animalândia</h1>
+      <input id="nick" type="text" placeholder="Digite seu nome aqui" />
+      <img id="green_vector" src="images/vector.png" alt="background" />
+      <img id="play_button" src="images/playButton.png" alt="play button" />
+    </div>
+    <div class="wrapper">
+      <a href="#modal_quit_game" rel="modal:open">
+        <img id="back" class="icons" src="/images/back.png" alt="back" />
+      </a>
+      <a href="#modal_help" rel="modal:open"
+        ><img id="help" class="icons" src="images/help.png" alt="help"
+      /></a>
+      <img id="soundon" class="icons" src="images/soundon.png" alt="sound on" />
+      <img
+        id="soundoff"
+        class="icons"
+        src="images/soundoff.png"
+        alt="sound off"
+      />
+      <a href="#modal_rank" rel="modal:open"
+        ><img
+          id="rank"
+          onclick="showRankingPlayers()"
+          class="icons"
+          src="images/rank.png"
+          alt="ranking"
+      /></a>
+      <a href="#modal_collection" rel="modal:open"
+        ><img
+          id="collection"
+          class="icons"
+          src="images/collection.png"
+          alt="collection"
+      /></a>
+      <div id="map">
+        <a href="#modal_fase1" rel="modal:open"
+          ><img
+            class="fase_button"
+            id="fase1_button"
+            src="images/faseButton.png"
+            alt="fase 1 button"
+        /></a>
+        <a href="#modal_fase2" rel="modal:open">
+          <img
+            class="fase_button"
+            id="fase2_button"
+            src="images/faseButton.png"
+            alt="fase 2 button"
+          />
+        </a>
+        <a href="#modal_fase3" rel="modal:open">
+          <img
+            class="fase_button"
+            id="fase3_button"
+            src="images/faseButton.png"
+            alt="fase 3 button"
+          />
+        </a>
+        <a href="#modal_fase4" rel="modal:open">
+          <img
+            class="fase_button"
+            id="fase4_button"
+            src="images/faseButton.png"
+            alt="fase 4 button"
+          />
+        </a>
+        <a href="#modal_fase5" rel="modal:open">
+          <img
+            class="fase_button"
+            id="fase5_button"
+            src="images/faseButton.png"
+            alt="fase 5 button"
+          />
+        </a>
+      </div>
+      <div id="fase1" class="fase">
+        <img class="box" src="images/box.png" alt="box" />
+        <img class="error" src="images/error.png" alt="error" />
+        <div class="score">1</div>
+        <a href="#close_game_modal">
+          <!-- <img class="close_fase" src="images/close.png" alt="close fase"/> -->
+          <button class="close_fase">Voltar</button>
+        </a>
+        <div id="position1" class="position1"></div>
+        <div id="position2" class="position2"></div>
+        <div id="position3" class="position3"></div>
+        <div id="position4" class="position4"></div>
+        <div id="position5" class="position5"></div>
+      </div>
+      <div id="fase2" class="fase">
+        <img class="box" src="images/box.png" alt="box" />
+        <img class="error" src="images/error.png" alt="error" />
+        <div class="score">1</div>
+        <a href="#close_game_modal">
+          <!-- <img class="close_fase" src="images/close.png" alt="close fase"/> -->
+          <button class="close_fase">Voltar</button>
+        </a>
+        <div id="position6" class="position1"></div>
+        <div id="position7" class="position2"></div>
+        <div id="position8" class="position3"></div>
+        <div id="position9" class="position4"></div>
+        <div id="position10" class="position5"></div>
+      </div>
+      <div id="fase3" class="fase">
+        <img class="box" src="images/box.png" alt="box" />
+        <img class="error" src="images/error.png" alt="error" />
+        <div class="score">1</div>
+        <a href="#close_game_modal">
+          <!-- <img class="close_fase" src="images/close.png" alt="close fase"/> -->
+          <button class="close_fase">Voltar</button>
+        </a>
+        <div id="position11" class="position1"></div>
+        <div id="position12" class="position2"></div>
+        <div id="position13" class="position3"></div>
+        <div id="position14" class="position4"></div>
+        <div id="position15" class="position5"></div>
+      </div>
+      <div id="fase4" class="fase">
+        <img class="box" src="images/box.png" alt="box" />
+        <img class="error" src="images/error.png" alt="error" />
+        <div class="score">1</div>
+        <a href="#close_game_modal">
+          <!-- <img class="close_fase" src="images/close.png" alt="close fase"/> -->
+          <button class="close_fase">Voltar</button>
+        </a>
+        <div id="position16" class="position1"></div>
+        <div id="position17" class="position2"></div>
+        <div id="position18" class="position3"></div>
+        <div id="position19" class="position4"></div>
+        <div id="position20" class="position5"></div>
+      </div>
+      <div id="fase5" class="fase">
+        <img class="box" src="images/box.png" alt="box" />
+        <img class="error" src="images/error.png" alt="error" />
+        <div class="score">1</div>
+        <a href="#close_game_modal">
+          <!-- <img class="close_fase" src="images/close.png" alt="close fase"/> -->
+          <button class="close_fase">Voltar</button>
+        </a>
+        <div id="position21" class="position1"></div>
+        <div id="position22" class="position2"></div>
+        <div id="position23" class="position3"></div>
+        <div id="position24" class="position4"></div>
+        <div id="position25" class="position5"></div>
+      </div>
+      <div id="close_game_modal">
+        <p>Tem certeza que deseja sair?</p>
+        <p>Você perderá o seu progresso nessa fase</p>
+
+        <a class="continue_game" href="#" rel="modal:close">
+          <button>Continuar</button>
+        </a>
+
+        <a class="close_game" href="#" rel="modal:close">
+          <button>Sair</button>
+        </a>
+      </div>
+      <div id="modal_fase1" class="modal_fase">
+        <p>Bem-vindo(a) a fase Pré-história!</p>
+        <p>
+          Arraste os itens diferentes para dentro da caixa deixando apenas os
+          animais. Você deverá cumprir três rodadas para finalizar a fase.
+        </p>
+        <p>Preparado(a)?</p>
+        <p>
+          <a id="play_fase1" href="#" rel="modal:close">
+            <button>Jogar</button>
+          </a>
+        </p>
+      </div>
+      <div id="modal_fase2" class="modal_fase">
+        <p>Bem-vindo(a) a fase Floresta!</p>
+        <p>
+          Arraste os itens diferentes para dentro da caixa deixando apenas os
+          animais. Você deverá cumprir três rodadas para finalizar a fase.
+        </p>
+        <p>Preparado(a)?</p>
+        <p>
+          <a id="play_fase2" href="#" rel="modal:close">
+            <button>Jogar</button>
+          </a>
+        </p>
+      </div>
+      <div id="modal_fase3" class="modal_fase">
+        <p>Bem-vindo(a) a fase Oceano!</p>
+        <p>
+          Arraste os itens diferentes para dentro da caixa deixando apenas os
+          animais. Você deverá cumprir três rodadas para finalizar a fase.
+        </p>
+        <p>Preparado(a)?</p>
+        <p>
+          <a id="play_fase3" href="#" rel="modal:close">
+            <button>Jogar</button>
+          </a>
+        </p>
+      </div>
+      <div id="modal_fase4" class="modal_fase">
+        <p>Bem-vindo(a) a fase Céu!</p>
+        <p>
+          Arraste os itens diferentes para dentro da caixa deixando apenas os
+          animais. Você deverá cumprir três rodadas para finalizar a fase.
+        </p>
+        <p>Preparado(a)?</p>
+        <p>
+          <a id="play_fase4" href="#" rel="modal:close">
+            <button>Jogar</button>
+          </a>
+        </p>
+      </div>
+      <div id="modal_fase5" class="modal_fase">
+        <p>Bem-vindo(a) a fase Jardim!</p>
+        <p>
+          Arraste os itens diferentes para dentro da caixa deixando apenas os
+          animais. Você deverá cumprir três rodadas para finalizar a fase.
+        </p>
+        <p>Preparado(a)?</p>
+        <p>
+          <a id="play_fase5" href="#" rel="modal:close">
+            <button>Jogar</button>
+          </a>
+        </p>
+      </div>
+      <div id="modal_help" class="modal_help">
+        <p>
+          Para começar a jogar clique em qualquer um dos círculos amarelos. Cada
+          um deles é uma fase que contém três níveis diferentes.
+        </p>
+        <p>
+          O jogo consiste em arrastar os objetos que não pertençem à cena para
+          dentro da caixa amarela.
+        </p>
+        <p>
+          A cada fim de fase você ganhará uma figurinha que aparecerá
+          automaticamente no seu álbum. Fique à vontade para jogar cada fase
+          quantas vezes quiser, mas apenas existem 4 figurinhas de cada fase.
+        </p>
+      </div>
+      <div id="modal_rank">
+        <p>Esse é o ranking do Animalândia!</p>
+        <table
+          id="ranking_table"
+          class="ranking_table"
+          border="1"
+          cellspacing="0"
+          rules="none"
+        >
+          <thead>
+            <tr>
+              <th>Jogador</th>
+              <th>Pontuação</th>
+              <th>Tempo</th>
+            </tr>
+          </thead>
+          <tbody id="ranking_tbody"></tbody>
+        </table>
+      </div>
+      <div id="fase_complete"></div>
+      <div id="level_complete">
+        <p>Muito bem!</p>
+        <p>
+          Você completou esse nível! Clique no botão abaixo para jogar outro
+          nível dessa fase.
+        </p>
+        <p>
+          <a id="next_level" href="#" rel="modal:close">
+            <button>Jogar</button>
+          </a>
+        </p>
+      </div>
+      <div id="modal_collection">
+        <p>Esse é o seu álbum de figurinhas!</p>
+        <p>
+          Complete as fases e ganhe um bichinho! Você pode conseguir até 4
+          figurinhas por fase.
+        </p>
+
+        <p>Pré-história</p>
+        <div id="prehistory_collection" class="collection">
+          <div class="stamp" id="dino1"></div>
+          <div class="stamp" id="dino2"></div>
+          <div class="stamp" id="dino3"></div>
+          <div class="stamp" id="dino4"></div>
+        </div>
+        <p>Floresta</p>
+        <div id="forest_collection" class="collection">
+          <div class="stamp" id="monkey"></div>
+          <div class="stamp" id="elephant"></div>
+          <div class="stamp" id="lion"></div>
+          <div class="stamp" id="giraffe"></div>
+        </div>
+
+        <p>Oceano</p>
+        <div id="ocean_collection" class="collection">
+          <div class="stamp" id="turtle"></div>
+          <div class="stamp" id="dolphin"></div>
+          <div class="stamp" id="fish1"></div>
+          <div class="stamp" id="fish2"></div>
+        </div>
+
+        <p>Céu</p>
+        <div id="sky_collection" class="collection">
+          <div class="stamp" id="canary"></div>
+          <div class="stamp" id="bird2"></div>
+          <div class="stamp" id="bird3"></div>
+          <div class="stamp" id="vulture"></div>
+
+        </div>
+
+        <p>Jardim</p>
+        <div id="garden_collection" class="collection">
+          <div class="stamp" id="bee"></div>
+          <div class="stamp" id="butterfly"></div>
+          <div class="stamp" id="hummingbird"></div>
+          <div class="stamp" id="ladybug"></div>
+        </div>
+      </div>
+      <div id="modal_quit_game">
+        <p>
+          Tem certeza que deseja sair do jogo? Você perderá todo o seu
+          progresso.
+        </p>
+        <p>
+          <a id="quit_game" href="#" rel="modal:close">
+            <button>Sair</button>
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="./script/jquery-ui-touch-punch.js"></script>
+    <script src="./script/backgroundSounds.js"></script>
+    <script src="./script/checkPlayers.js"></script>
+    <script src="./script/chronometer.js"></script>
+    <script src="./script/faseControler.js"></script>
+    <script src="./script/forest.js"></script>
+    <script src="./script/forestObjects.js"></script>
+    <script src="./script/garden.js"></script>
+    <script src="./script/gardenObjects.js"></script>
+    <script src="./script/ocean.js"></script>
+    <script src="./script/oceanObjects.js"></script>
+    <script src="./script/player.js"></script>
+    <script src="./script/prehistory.js"></script>
+    <script src="./script/prehistoryObjects.js"></script>
+    <script src="./script/raffle.js"></script>
+    <script src="./script/ranking.js"></script>
+    <script src="./script/score.js"></script>
+    <script src="./script/shuffle.js"></script>
+    <script src="./script/sky.js"></script>
+    <script src="./script/skyObjects.js"></script>
+    <script src="./script/sound.js"></script>
+    <script src="./script/stickers.js"></script>
+    <script src="./script/time.js"></script>
+    <script src="./script/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,69 @@
+.ranking_table {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--gray);
+  font-family: Poppins;
+}
+
+.ranking_table thead {
+  width: 100%;
+  height: 10%;
+  background: var(--gray);
+  color: var(--white);
+}
+
+.ranking_table thead tr {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ranking_table thead tr th {
+  font-weight: unset;
+}
+
+#ranking_tbody {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  color: var(--gray);
+}
+
+#ranking_tbody tr {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-top: 1px solid var(--gray);
+}
+
+#ranking_tbody tr:last-child {
+  border-bottom: unset;
+}
+
+#ranking_tbody td {
+  display: flex;
+  justify-content: center;
+}
+
+#ranking_tbody td:nth-child(1) {
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.ranking_table th:nth-child(odd),
+.ranking_table td:nth-child(odd) {
+  width: 40%;
+}
+
+.ranking_table th:nth-child(even),
+.ranking_table td:nth-child(even) {
+  width: 20%;
+}
