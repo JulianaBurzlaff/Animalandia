@@ -1,5 +1,5 @@
 # Animalandia
-Jogo infantil desenvolvido em 10 dias como desafio na formação Alpha Edtech
+Jogo infantil desenvolvido em 10 dias como desafio na formação Alpha Edtech. [Clique para jogar](https://animalandia-game.netlify.app/)
 
 # Sobre o jogo
 
@@ -38,6 +38,6 @@ Não há nenhuma dependência, portanto, basta criar o seu servidor, fazer uploa
 
 # Equipe de desenvolvimento
 
-Ana Paula Oliveira, https://github.com/anapolima<br/>
-Juliana Burzlaff, https://github.com/JulianaBurzlaff,
-Luana Lessa, https://github.com/luanalessa
+- [Ana Paula Oliveira](https://github.com/anapolima)
+- [Juliana Burzlaff](https://github.com/JulianaBurzlaff)
+- [Luana Lessa](https://github.com/luanalessa)
